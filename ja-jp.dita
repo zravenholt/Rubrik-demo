@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="ja-jp" id="rbs_overview">
+    <title>概要</title>
+    <shortdesc>Rubrik Backup Serviceは、保護されたリソースとホストシステムとの統合を強化します。</shortdesc>
+    <conbody>
+        <section>
+            <title>説明</title>
+            <p>必要に応じてRubrik Backup ServiceソフトウェアをRubrikクラスタから直接ダウンロードすることも、ソフトウェアを一度ダウンロードして必要に応じてホストにプッシュすることもできます。</p>
+            <note type="important">
+                <p>Rubrik Backup Serviceソフトウェアは、ソフトウェアを入手したRubrikクラスタでのみ使用できます。 各Rubrikクラスタは、そのRubrikクラスタ固有の認証情報を含むRubrik Backup Serviceソフトウェアのコピーを生成します。 この方法を使用すると、RubrikクラスタとRubrik Backup Serviceのホストされた展開が確実に相互認証できます</p>
+            </note>
+            <p>Rubrikは、Rubrikクラスタソフトウェアの一般的なアップグレードの一環として、Rubrik Backup Serviceソフトウェアの自動アップグレードを提供します。 Rubrikクラスタソフトウェアをアップグレードした後、Rubrikクラスタは保護されたリソースの次のバックアップ時に自動的にRubrik Backup Serviceソフトウェアをアップグレードします。</p></section>
+        <section>
+            <title>適格なリソース</title>
+            <p>最適な保護のために、Rubrik Backup Serviceソフトウェアは、次の保護されたリソースにインストールする必要があります。<ul id="ul_fbv_hwv_2bb">
+                    <li>Windowsゲストオペレーティングシステムを実行するvSphere仮想マシン</li>
+                    <li>Microsoft Hyper-Vサーバーホスト</li>
+                    <li>ファイルセット保護を使用するLinuxホスト</li>
+                    <li>ファイルセット保護を使用するMicrosoft Windowsホスト</li>
+                    <li>SQL Serverデータベース保護を使用するMicrosoft Windows Serverホスト</li>
+                </ul></p>
+        </section>
+        <section>
+            <title>除外されたリソース</title>
+            <p>Rubrik CDMでは、次の保護されたリソースに対してRubrik Backup Serviceは必要ありません。<ul id="ul_klt_gwv_2bb">
+                    <li>AHV仮想マシン</li>
+                    <li>NASシェア</li>
+                    <li>Oracle RMANのバックアップ</li>
+                </ul></p>
+        </section>
+    </conbody>
+</concept>
