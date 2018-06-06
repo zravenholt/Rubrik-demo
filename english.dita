@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rbs_overview">
+    <title>Overview</title>
+    <shortdesc>The Rubrik Backup Service provides enhanced integration with protected resources and
+        host systems.</shortdesc>
+    <conbody>
+        <section>
+            <title>Description</title>
+            <p>The Rubrik Backup Service software can be downloaded directly from the Rubrik cluster
+                when it is needed, or the software can be downloaded once and pushed to hosts as
+                needed.</p>
+            <note type="important">
+                <p>The Rubrik Backup Service software can only be used with the Rubrik cluster from
+                    which the software is obtained. Each Rubrik cluster generates a copy of the
+                    Rubrik Backup Service software that includes authentication information specific
+                    to that Rubrik cluster. This method ensures that the Rubrik cluster and a hosted
+                    deployment of the Rubrik Backup Service can reliably authenticate each
+                    other.</p>
+            </note>
+            <p>Rubrik provides automatic upgrade of the Rubrik Backup Service software as part of a
+                general upgrade of the Rubrik cluster software. After upgrading the Rubrik cluster
+                software, the Rubrik cluster automatically upgrades the Rubrik Backup Service
+                software at the next backup of a protected resource.</p></section>
+        <section>
+            <title>Eligible resources</title>
+            <p>For optimal protection the Rubrik Backup Service software must be installed on the
+                following protected resources:<ul id="ul_fbv_hwv_2bb">
+                    <li>vSphere virtual machines running a Windows guest operating system</li>
+                    <li>Microsoft Hyper-V Server hosts</li>
+                    <li>Linux hosts using fileset protection</li>
+                    <li>Microsoft Windows hosts using fileset protection</li>
+                    <li>Microsoft Windows Server hosts using SQL Server database protection</li>
+                </ul></p>
+        </section>
+        <section>
+            <title>Excluded resources</title>
+            <p>Rubrik CDM does not require the Rubrik Backup Service on the following protected
+                    resources:<ul id="ul_klt_gwv_2bb">
+                    <li>AHV virtual machines</li>
+                    <li>NAS shares</li>
+                    <li>Oracle RMAN backups</li>
+                </ul></p>
+        </section>
+    </conbody>
+</concept>
